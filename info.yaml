@@ -21,10 +21,10 @@ yaml_version: 4
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       "Jeff DiCorpo"      # Your name
-  title:        "FPGA demo"      # Project title
-  language:     "Wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  "FPGA demo"      # Short description of what your project does
+  author:       "Your name here"                 # Your name
+  title:        "Wokwi FPGA bitstream"           # Project title
+  language:     "Wokwi"                          # other examples include Verilog, Amaranth, VHDL, etc
+  description:  "The project generates an FPGA bitstream for a Wokwi based Tiny Tapeout design."      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
