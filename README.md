@@ -22,9 +22,10 @@ Create and simulate your design on Wokwi.
 
 To program the FPGA demo board with your design, follow the next set of instructions.
 
-## 2. Fork this repo
+## 2. Clone this repo
 
-Create a GitHub account if you don't have one.  Fork this repo to create a copy in your GitHub account.
+Create a GitHub account if you don't have one.  Log into your account and select the 'Use this template' button in the 
+upper right to clone a new copy of this repo in your GitHub account.
 
 ## 3. Enable GitHub actions to build the results page
 
