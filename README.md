@@ -12,7 +12,7 @@ To learn more and get started, visit https://tinytapeout.com.
 
 # How to Use this Template
 
-## 1. Create you design
+## 1. Create your design
 
 Go to the Wokwi project template (https://wokwi.com/projects/388731863464378369).  
 
@@ -36,7 +36,7 @@ Edit the [info.yaml](info.yaml) and change the wokwi_id to the ID of your Wokwi 
 
 The GitHub action will automatically fetch the digital netlist from Wokwi and build the FPGA bitstream.
 
-## 5. Generate and Download your Bitstream
+## 5. Generate and download your FPGA bitstream
 
 Once GitHub Actions have been enabled for your forked copy of this repo, GitHub will automatically run the workflows found under the Actions menu for your repo.
 
@@ -46,7 +46,7 @@ A green checkmark shows the workflow completed successfully.  Click on the workf
 
 Follow the instruction to program the bitstream on your demo board.
 
-## 6. Programming your Bitstream
+## 6. Programming your bitstream on the FPGA board
 
 ### Put your board in 'Boot Mode'
 
@@ -70,11 +70,28 @@ Unplug and re-plug the USB in the top carrier to power cycle the board.
 
 ### dfu-util for Win64
 
+Download and unzip the following executable...
+
+https://files.ef.link/mest/win64.zip
+
+dfu-util.exe will be installed under /win64
+
+### dfu-util for Mac
+
+brew install dfu-util
+
+### Ubuntu
+It's pre-installed… yay… but you don't have permission to use it. To open USB access:
+
+echo 'ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="6146", MODE="664", GROUP="plugdev", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/50-usb.rules
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+
 ## Verilog Projects
 
 For Verilog projects, see the following repo for a template that supports Verilog based designs.
 
-## Resources
+## Other Resources
 
 - [FAQ](https://tinytapeout.com/faq/)
 - [Digital design lessons](https://tinytapeout.com/digital_design/)
